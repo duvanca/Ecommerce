@@ -134,7 +134,10 @@
   background-color: var(--secondary-color);
 }
 
-/* ------- Similar Products -------- */
+.product-info__btn{
+  color:black;
+}
+
 .similar-products__title {
   margin-bottom: 30px;
 }
