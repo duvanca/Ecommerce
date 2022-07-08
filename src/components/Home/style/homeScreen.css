@@ -1,0 +1,158 @@
+.products-container{
+  padding: var(--padding-mobile);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px
+}
+
+.card-product {
+  width: min(100%, 300px);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+.card-product__header {
+  height: 200px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+.card-product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 400ms ease-out;
+  opacity: 1;
+}
+.card-product__header:hover .card-product__img {
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+.card-product__header:hover .card-product__img-back {
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+}
+.card-product__img-back{
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+.card-product__body {
+  padding: 20px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.card-product__title{
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  height: 42px;
+
+}
+.card-product__price-label {
+  font-size: 0.8rem;
+  color: #888a;
+  position: relative;
+  left: -5px;
+  margin-bottom: 3px;
+}
+.card-product__price-number {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card-product__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+
+.form-home{
+  display:flex;
+  gap:30px;
+
+}
+
+@media screen and  (max-width: 719px){
+  .container-form{
+    position: fixed;
+    top: 70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:white ;
+    z-index: 20;
+    height:60px;
+  }
+}
+
+
+.container-form{
+  position: fixed;
+  top: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color:white ;
+  z-index: 20;
+  height:60px;
+}
+.btn-form{
+  border:1px solid black;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  background:linear-gradient(to right, transparent 50%, #cfcc10   50%) no-repeat left / 200%;
+  transition: background-position 0.3s ease;   
+}
+
+.btn-form:hover{
+  background-position: right; 
+  color:rgb(0, 0, 0); 
+  
+}
+.input-search{
+  width:250px;
+  border-radius:5px;
+  border:1px solid black;
+}
+.home{
+  margin-top: 170px;
+}
+
+
+.card-product__btn i{
+  color:black;
+  font-size:20px;
+}
+
+
+
+@media screen and (max-width:344px){
+  .container-form{
+ 
+    top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:white ;
+    z-index: 20;
+    height:60px;
+  }
+}
