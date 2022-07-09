@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import './styles/headerScreen.css'
+import  sshoping from "../../img/sshoping.svg"
 
 const HeaderScreen = () => {
 
@@ -12,10 +13,10 @@ const HeaderScreen = () => {
 
   return (
     <header className="header">
-      <h1 className="header__title">
+    <h1 className="header__title">
         <Link to='/'>e-commerce</Link>
       </h1>
-      <div onClick={clickMenuHam} className="header__menuham">
+  <div onClick={clickMenuHam} className="header__menuham">
         <i className="fa-solid fa-bars"></i>
       </div>
       <nav ref={navbar} className="navbar">
