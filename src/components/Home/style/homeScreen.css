@@ -11,6 +11,11 @@
   border-radius: 10px;
   border: 1px solid var(--border-color);
   cursor: pointer;
+  transition: box-shadow 200ms ease;
+}
+.card-product:hover {
+  box-shadow: 1px 1px 10px #888a;
+  transition: box-shadow 200ms ease;
 }
 .card-product__header {
   height: 200px;
