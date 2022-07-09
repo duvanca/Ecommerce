@@ -18,7 +18,7 @@ const ProductScreen = () => {
     .then(res => setProduct(res.data.data.product))
     .catch(err => console.log(err))
   }, [id])
-  
+   console.log(product)
 
   return (
     <div className='product'>
